@@ -1,0 +1,32 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Tasks
+{
+    internal class Task2q4
+    {
+        public static void Main(string[] args)
+        {
+            float[] marks=new float[5];
+            float sum = 0;
+            float percentage;
+            Console.WriteLine("enter marks");
+            for(int i=0;i<5;i++)
+            {
+                marks[i]=Convert.ToInt32(Console.ReadLine());
+            }
+            for(int i=0;i<5;i++)
+            {
+                sum = sum + marks[i];
+
+            }
+            Console.WriteLine("total marks" + sum);
+            percentage = (sum / 500) * 100;
+            Console.WriteLine("percentage:" + percentage);
+
+        }
+    }
+}

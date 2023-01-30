@@ -1,0 +1,59 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Tasks
+{
+    internal class Task5q2
+    {
+        
+        public int EmpID;
+        public String EmpName;
+        public String Gender;
+        public int exp;
+        public int Salary;
+        public Task5q2(int ID, String name, String gender, int yoe, int sal)
+        {
+            EmpID = ID;
+            EmpName = name;
+            Gender = gender;
+            exp = yoe;
+            Salary = sal;
+        }
+    }
+    class EmpDept
+    {
+        double bonus = 0;
+        String depart;
+        public Task5q2 edobj;
+        public EmpDept(String dept, Task5q2 empDetails)
+        {
+            depart = dept;
+            edobj = empDetails;
+            if (depart == "SM")
+            {
+                bonus = 0.2 * edobj.Salary;
+            }
+            if (depart == "PD")
+                bonus = 0.1 * edobj.Salary;
+        }
+        public void Display()
+        {
+            
+            Console.WriteLine($"Employee ID:{edobj.EmpID}");
+            Console.WriteLine($"Employee Name :{edobj.EmpName}");
+            Console.WriteLine($"Gender:{edobj.Gender}");
+            Console.WriteLine($"Experience:{edobj.exp}");
+            Console.WriteLine($"Salary :{edobj.Salary}");
+            Console.WriteLine($"Bonus is : {bonus}");
+        }
+        public static void Main()
+        {
+            Task5q2 obj = new Task5q2(028, "Bhavya", "Female", 1, 100000);
+            EmpDept obj1 = new EmpDept("PD", obj);
+            obj1.Display();
+        }
+    }
+}

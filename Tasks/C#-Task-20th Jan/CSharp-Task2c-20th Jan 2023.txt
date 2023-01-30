@@ -1,0 +1,33 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Tasks
+{
+    internal class Task2q3
+    {
+        public static void Main(string[] args)
+        {
+            string package;
+            Console.WriteLine("Package A - South special,Childeren's club,Movies");
+            Console.WriteLine("Package B - News,Sports,Movies,Regional");
+            Console.WriteLine("Package C - Discovery,History,National");
+            Console.WriteLine("Enter your package");
+            package= Console.ReadLine();
+            switch(package)
+            {
+                    case "A" :Console.WriteLine("Rs.300");
+                    break;
+                    case "B" :Console.WriteLine("Rs.500");
+                    break;
+                    case "C" :Console.WriteLine("Rs.400");
+                    break;
+                    default: Console.WriteLine("do enter your package");
+                    break; 
+            }
+
+        }
+    }
+}

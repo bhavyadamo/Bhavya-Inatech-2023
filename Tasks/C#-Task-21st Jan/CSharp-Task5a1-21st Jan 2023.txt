@@ -1,0 +1,44 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Tasks
+{
+    internal class Task5q1
+    {
+       
+        public void Name()
+        {
+
+            Console.WriteLine("Enter name");
+            string name = Console.ReadLine();
+            Console.Write("Name of the person is {0}", name);
+            Console.WriteLine();
+        }
+        public void Age()
+        {
+            Console.WriteLine("Enter Age");
+            int age = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Age of the person is {0}", age);
+        }
+    }
+    public class NameandAge
+    {
+        public static void Main()
+        {
+            Task5q1 obj = new Task5q1();
+            obj.Name();
+            obj.Age();
+
+        }
+    }
+
+
+
+
+
+}
+
+        

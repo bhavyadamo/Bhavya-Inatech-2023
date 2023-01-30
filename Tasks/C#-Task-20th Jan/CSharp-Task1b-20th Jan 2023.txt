@@ -1,0 +1,50 @@
+using Microsoft.VisualBasic;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Tasks
+{
+    internal class questwo
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Do you have travel history?");
+            string a = Console.ReadLine();
+            int a1 = Convert.ToInt32(string.Compare(a, "no")); 
+            if (a1 == 1)
+            {
+                Console.WriteLine("Do you have temperature?");
+                string b = Console.ReadLine();
+                int b1 = Convert.ToInt32(string.Compare(b, "no"));
+                if (b1 == 1)
+                {
+                    Console.WriteLine("Do you have cough/sneez");
+                    string c = Console.ReadLine();
+                    int c1 = Convert.ToInt32(string.Compare(c, "no"));
+                    if (c1 == 1)
+                    {
+                        Console.WriteLine("Swab Test");
+                    }
+                    else if (c1 == 0)
+                    {
+                        Console.WriteLine("Quarantine, Fever Medicine");
+                    }
+                }
+                else if (b1 == 0)
+                {
+                    Console.WriteLine("Home Quarantine for 28 Days");
+                }
+            }
+            else if (a1 == 0)
+            {
+                Console.WriteLine("Safe - Not COVID-19");
+            }
+        }
+    }
+
+
+}
+

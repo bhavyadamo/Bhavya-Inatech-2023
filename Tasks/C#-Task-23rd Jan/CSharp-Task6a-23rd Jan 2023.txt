@@ -1,0 +1,41 @@
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Task6
+{
+    internal class Desserts
+    {
+        public static void Main()
+        {
+
+            ArrayList ar = new ArrayList();
+            ar.Add("Cup cakes");
+            ar.Add("Brownies");
+            ar.Add("Gulab Jamun");
+            ar.Add("Carrot cake");
+            ar.Add("Black forest");
+            ar.Add("Eclairs cake");
+
+            FileStream fs = new FileStream("D:\\csharp\\Consoleproject\\desserts.txt", FileMode.OpenOrCreate, FileAccess.Write);
+            StreamWriter sw = new StreamWriter(fs);
+            foreach (object i in ar)
+                sw.WriteLine(i);
+            sw.Flush();
+            sw.Close();
+            fs.Close();
+
+            
+
+            FileInfo info = new FileInfo("D:\\csharp\\Consoleproject\\desserts.txt");
+            Console.WriteLine("Creation Time : {0}", info.CreationTime);
+            Console.WriteLine("Size : {0}", info.Length);
+
+
+
+        }
+    }
+}

@@ -1,0 +1,53 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Tasks
+{
+    internal class Task4b
+    {
+        public void Add(int x,int y)
+        {
+            int num1 = x;
+            int num2 = y;
+            Console.WriteLine("Sum is: {0}",num1+num2);
+        }
+        public void Subtract (int x,int y)
+        {
+            int num1 = x;
+            int num2 = y;
+            Console.WriteLine("Diff is: {0}", num1 - num2);
+        }
+    }
+    class Multiplynddiv : Task4b
+    {
+        public void Multiply(int x,int y)
+        {
+            int num1=x; int num2=y;
+            Console.WriteLine("Multiply is: {0}", num1 * num2);
+        }
+        public void Divide(int x,int y)
+        {
+            int num1=x; int num2=y;
+            Console.WriteLine("Divide is: {0}",num1/ num2);
+        }
+
+    }
+    public class Arithmetic
+    {
+        public static void Main(string[] args)
+        {
+            Multiplynddiv obj = new Multiplynddiv();
+            obj.Add(100,2);
+            obj.Subtract(10,2);
+            obj.Multiply(10,2);
+            obj.Divide(10,2);
+            Console.ReadLine();
+
+           
+        }
+
+    }
+}

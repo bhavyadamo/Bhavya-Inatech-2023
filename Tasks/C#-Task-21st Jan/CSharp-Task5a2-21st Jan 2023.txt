@@ -1,0 +1,42 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Tasks
+{
+    internal class Task5q1b
+    {
+        
+        string name;
+        public Task5q1b(string name)
+        {
+
+            Console.Write("Name of the person is {0}", name);
+        }
+
+    }
+    class Age
+    {
+        int age;
+        public Age(int age)
+        {
+
+            Console.WriteLine("Age of the person is {0}", age);
+        }
+    }
+    class Implinameandage
+    {
+        public static void Main()
+        {
+
+            Task5q1b obj1 = new  Task5q1b("Bhavya");
+            Age obj = new Age(22);
+
+
+
+
+        }
+    }
+}
