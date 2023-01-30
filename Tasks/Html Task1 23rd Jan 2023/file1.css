@@ -1,0 +1,49 @@
+#main {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 20%;
+    margin-right:20%;
+    padding: 2%;
+    color: white;
+    background-color: #191970;
+    border-radius: 25px;
+}
+#mains {
+    background-color: #ADD8E6;
+    padding-top: 3% ;
+    padding-bottom: 5% ;
+}
+#pic {
+    width: 100%;
+    border-radius: 25px;
+}
+#pict {
+    width: 100%;
+    height: 60%; 
+    object-fit: cover;
+    border-radius: 0px 0px 25px 25px;
+}
+#titles {
+    text-align: center;
+    background-color: #E0FFFF;
+    color: #191970;
+    padding: 1%;
+    border-radius: 10px;
+}
+#head1 {
+    text-align: center;
+    background-color: #6A5ACD;
+    color: white;
+    padding: 1%;
+    margin: 0%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 25px 25px 0px 0px;
+    font-size: 50px;
+}
+#heads {
+    text-align: center;
+    background-color: #6A5ACD;
+    color: white;
+    padding: 1%;
+    margin: 0%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
